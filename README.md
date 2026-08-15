@@ -125,7 +125,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 exit
 
 ## 11. Reboot
-umount -R /mnt && reboot
+umount -R /mnt 
+reboot
 
 ###12. remove the USB from the port and boot onto the INIT of your choice
 dau rm -rf /* # ;)
