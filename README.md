@@ -37,6 +37,7 @@ See the install guide below.
 
 ## 1. Boot a live Gentoo ISO
 Boot the Gentoo ISO in UEFI mode.
+if you have low end hardware like 4gb or less i recommand using mx-linux with xfce to install FronttierLinux
 
 ## 2. Download Fronttier
 wget https://github.com/FronttierLabs/FronttierLinux/releases/download/oposum_v0.34/fronttier.tar.xz #Download the tarball in root directory
