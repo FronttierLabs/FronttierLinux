@@ -9,7 +9,7 @@ stage tarball like Gentoo. -install IT, Use it, that's it.
 - less than 300MB** Smallest tarbal ever ~ (Gentoo systemd stage: 500+ MB)
 - systemd** and **runit** in one Tarbal
 - Full source toolchain**: gcc, headers, Python, Perl, cmake
-- Optional **Void ENV**
+- **will add** a void ENV for FronttierLinux in the near future
 - **x86_64 only** (64-bit Intel or AMD)
 - 32-bit x86, ARM, and RISC-V are **not supported** yet.
 
