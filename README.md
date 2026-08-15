@@ -26,6 +26,9 @@ See the install guide below.
 - documentation: CC BY-SA 4.0
 - Bundled third-party software: see 'THIRD_PARTY_LICENSES.md'
 
+
+
+## install /guide
 ```bash
 # Fronttier Linux — Stage Tarball Install Guide
 
