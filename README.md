@@ -53,7 +53,7 @@ export DISK=/dev/sdX            # CHANGE THIS
 export PART1=${DISK}1 MUST BE EFI # or ${DISK}p1 for nvme
 export PART2=${DISK}2 MUST BE ROOT # or ${DISK}p2
 
-mkfs.fat  -F32 -n FRONTIER_ESP  "$PART1"
+mkfs.fat  -F32 -n ESP  "$PART1"
 mkfs.ext4 -L FronttierRoot -F   "$PART2"
 
 ## 6. Extract and mount disks
@@ -81,6 +81,9 @@ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime # or your time zone
 
 passwd root                  # set a real password, default passwd is 123
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+groupadd storage
 useradd -m -G wheel,audio,video,storage -s /bin/bash "user"
 passwd "user"
 
@@ -123,5 +126,9 @@ exit
 
 ## 11. Reboot
 umount -R /mnt && reboot
+
+###optional
+after login of the non root user you must setup ZSH if you will use zsh so simply enter "zsh" in in tty after login
+
 
 ```
