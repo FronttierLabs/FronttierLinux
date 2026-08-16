@@ -43,9 +43,12 @@ chmod 1777 /mnt/tmp
 ```
 ## 7. Chroot
 ```bash
-mount --rbind /dev  /mnt/dev  && mount --make-rslave /mnt/dev
-mount --rbind /sys  /mnt/sys  && mount --make-rslave /mnt/sys
-mount --rbind /proc /mnt/proc && mount --make-rslave /mnt/proc
+mount --rbind /dev  /mnt/dev 
+mount --make-rslave /mnt/dev
+mount --rbind /sys  /mnt/sys
+mount --make-rslave /mnt/sys
+mount --rbind /proc /mnt/proc
+mount --make-rslave /mnt/proc
 mount -t tmpfs tmpfs /mnt/run
 
 cp /etc/resolv.conf /mnt/etc/resolv.conf
@@ -114,7 +117,7 @@ menuentry "Fronttier Linux (Runit)" {
 GRUBENTRY
 EOF
 ```
-##Just to be sure its executable run :
+## Just to be sure its executable run :
 ```bash
 chmod +x /etc/grub.d/40_custom
 
