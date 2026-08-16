@@ -20,8 +20,8 @@ See the install guide below.
 
 ## Source vs release
 
-- **This repo** contains scripts, configs, and docs. >> https://github.com/FronttierLabs/FronttierLinux/tags
-- **The stage tarball** lives in GitHub Releases.
+- **This repo** contains scripts, configs, and docs. 
+- **The stage tarball** lives in GitHub Releases. > https://github.com/FronttierLabs/FronttierLinux/tags
 
 ## Licenses
 
