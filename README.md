@@ -131,7 +131,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 exit
 ```
-##11. Reboot and boot on FronttierLinux
+## 11. Reboot and boot on FronttierLinux
 ```bash
 umount -R /mnt 
 reboot
