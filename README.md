@@ -137,11 +137,11 @@ umount -R /mnt
 reboot
 ```
 
-###12. remove the USB from the port and boot onto the INIT of your choice
+### 12. remove the USB from the port and boot onto the INIT of your choice
 
 dau rm -rf /* # ;)
 
-###optional
+### optional
 
 after login of the non root user you must setup ZSH 
 
