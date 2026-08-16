@@ -6,15 +6,15 @@ Smaller than everything that can do what it does.
 Fronttier Linux is a from-scratch LFS-based distrbution shipped as a
 stage tarball like Gentoo. -install IT, Use it, that's it.
 
-- less than 300MB** Smallest tarbal ever ~ (Gentoo systemd stage: 500+ MB)
-- systemd** and **runit** in one Tarbal
-- Full source toolchain**: gcc, headers, Python, Perl, cmake
+- **less than 300MB** Smallest tarbal ever ~ (Gentoo systemd stage: 500+ MB)
+- **systemd** and **runit** in one Tarball
+- **Full source toolchain**: while keep the size down..
 - **will add** a void ENV for FronttierLinux in the near future
 - **x86_64 only** (64-bit Intel or AMD)
 - 32-bit x86, ARM, and RISC-V are **not supported** yet.
 
 
-## Install
+## installation
 
 See the install guide below.
 
