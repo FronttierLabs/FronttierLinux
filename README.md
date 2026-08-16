@@ -1,3 +1,35 @@
+# FronttierLinux
+Smaller than everything that can do what it does.
+
+## What is it?
+
+Fronttier Linux is a from-scratch LFS-based distrbution shipped as a
+stage tarball like Gentoo. -install IT, Use it, that's it.
+
+- less than 300MB** Smallest tarbal ever ~ (Gentoo systemd stage: 500+ MB)
+- systemd** and **runit** in one Tarbal
+- Full source toolchain**: gcc, headers, Python, Perl, cmake
+- **will add** a void ENV for FronttierLinux in the near future
+- **x86_64 only** (64-bit Intel or AMD)
+- 32-bit x86, ARM, and RISC-V are **not supported** yet.
+
+
+## Install
+
+See the install guide below.
+
+## Source vs release
+
+- **This repo** contains scripts, configs, and docs. >> https://github.com/FronttierLabs/FronttierLinux/tags
+- **The stage tarball** lives in GitHub Releases.
+
+## Licenses
+
+- scripts: GPL-3.0-or-later ('LICENSE')
+- documentation: CC BY-SA 4.0
+- Bundled third-party software: see 'THIRD_PARTY_LICENSES.md'
+
+
 # Fronttier Linux — Stage Tarball Install Guide
 
 ## 1. Boot a live Gentoo ISO
@@ -15,7 +47,7 @@ wget https://github.com/FronttierLabs/FronttierLinux/releases/download/oposum_v0
 sudo -i
 lsblk          # confirm the disk name, e.g. /dev/sda or /dev/nvme0n1 or /dev/vda
 ```
-## 4. Partition the disk (UEFI)
+## 4. Partition the disk (UEFI) if not UEFI see how to install for legacy in 34
 ```bash
 cfdisk /dev/sdX          # create:
                          #   Type: EFI System Partition, size >= 512MM
@@ -144,4 +176,7 @@ dau rm -rf /* # ;)
 ### optional
 
 after login of the non root user you must setup ZSH 
+
+## 34. LEGACY installation 
+- instead
 
